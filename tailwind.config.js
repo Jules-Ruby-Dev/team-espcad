@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: [
     './index.html',
     './src/**/*.{vue,js,ts,jsx,tsx}',
@@ -41,12 +42,17 @@ export default {
           dark2: '#6b46c1',
           dark3: '#44337a',
         },
+        bird: {
+          orange: '#F7731C',
+        },
       },
 
       /* ── Gradient backgrounds ── */
       backgroundImage: {
         'gradient-dark':
           'linear-gradient(135deg, #0d2e2e 0%, #1a4040 40%, #0d2626 100%)',
+        'gradient-light':
+          'linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%)',
         'gradient-base':
           'linear-gradient(135deg, #234e52 0%, #2c7a7b 50%, #1d4044 100%)',
         'gradient-card':
@@ -94,17 +100,22 @@ export default {
       /* ── Animation ── */
       keyframes: {
         'slide-in-left': {
-          '0%':   { opacity: '0', transform: 'translateX(-36px)' },
+          '0%':   { opacity: '0', transform: 'translateX(-55vw)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         'slide-in-right': {
-          '0%':   { opacity: '0', transform: 'translateX(36px)' },
+          '0%':   { opacity: '0', transform: 'translateX(55vw)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        'fade-in': {
+          '0%':   { opacity: '0' },
+          '100%': { opacity: '1' },
         },
       },
       animation: {
-        'slide-in-left':  'slide-in-left  500ms cubic-bezier(0.22,1,0.36,1) both',
-        'slide-in-right': 'slide-in-right 500ms cubic-bezier(0.22,1,0.36,1) both',
+        'slide-in-left':  'slide-in-left  600ms ease-in both',
+        'slide-in-right': 'slide-in-right 600ms ease-in both',
+        'fade-in':        'fade-in        600ms ease-in both',
       },
 
       /* ── Max widths ── */
