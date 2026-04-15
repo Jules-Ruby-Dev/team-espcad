@@ -7,8 +7,7 @@
         @click="toggleTheme"
         :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
         class="absolute top-m right-m flex items-center gap-xs px-s py-xxs rounded-pill border transition-colors duration-200
-               dark:bg-teal-dark3 dark:border-teal/30 dark:hover:bg-teal-dark2
-               bg-white border-slate-light1 hover:bg-slate-light2
+               bg-teal-dark3 border-teal/30 hover:bg-teal-dark2
                shadow-sm"
       >
         <!-- Sun icon -->
@@ -16,8 +15,7 @@
           <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm0-16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1zm9 8a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zm14.95 5.364a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707zM6.757 7.05a1 1 0 0 1-1.414 1.415l-.707-.707A1 1 0 0 1 6.05 6.343l.707.707zm12.02-1.414a1 1 0 0 1 0 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0zM7.464 17.657a1 1 0 0 1 0 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0z"/>
         </svg>
         <!-- Pill track -->
-        <span class="relative inline-flex w-10 h-5 rounded-pill transition-colors duration-200"
-              :class="isDark ? 'bg-teal' : 'bg-slate-light1'">
+        <span class="relative inline-flex w-10 h-5 rounded-pill bg-teal transition-colors duration-200">
           <span class="absolute top-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-all duration-200"
                 :class="isDark ? 'left-[calc(100%_-_1.25rem)]' : 'left-0.5'">
           </span>
@@ -43,7 +41,7 @@
 
     <!-- Main content -->
     <main class="flex-1 w-full max-w-content mx-auto px-m sm:px-l pb-2xl">
-      <h1 class="font-barlow text-h2 sm:text-h1 font-bold text-bird-orange text-center mb-xl tracking-wide">
+      <h1 class="font-barlow text-h2 sm:text-h1 font-bold text-yellow-dark2 dark:text-yellow-dark text-center mb-xl tracking-wide">
         Meet the Team
       </h1>
 

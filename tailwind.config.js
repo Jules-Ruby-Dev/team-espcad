@@ -1,3 +1,9 @@
+import {
+  CARD_ANIM_DURATION_MS,
+  CARD_ANIM_EASING,
+  CARD_ANIM_TRANSLATE_VW,
+} from './src/styles/animation.js'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'class',
@@ -44,6 +50,11 @@ export default {
         },
         bird: {
           orange: '#F7731C',
+        },
+        yellow: {
+          DEFAULT: '#F6C90E',
+          dark: '#FBBF24',
+          dark2: '#B45309',
         },
       },
 
@@ -100,11 +111,11 @@ export default {
       /* ── Animation ── */
       keyframes: {
         'slide-in-left': {
-          '0%':   { opacity: '0', transform: 'translateX(-55vw)' },
+          '0%':   { opacity: '0', transform: `translateX(-${CARD_ANIM_TRANSLATE_VW}vw)` },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         'slide-in-right': {
-          '0%':   { opacity: '0', transform: 'translateX(55vw)' },
+          '0%':   { opacity: '0', transform: `translateX(${CARD_ANIM_TRANSLATE_VW}vw)` },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
         'fade-in': {
@@ -113,9 +124,9 @@ export default {
         },
       },
       animation: {
-        'slide-in-left':  'slide-in-left  600ms ease-in both',
-        'slide-in-right': 'slide-in-right 600ms ease-in both',
-        'fade-in':        'fade-in        600ms ease-in both',
+        'slide-in-left':  `slide-in-left  ${CARD_ANIM_DURATION_MS}ms ${CARD_ANIM_EASING} both`,
+        'slide-in-right': `slide-in-right ${CARD_ANIM_DURATION_MS}ms ${CARD_ANIM_EASING} both`,
+        'fade-in':        `fade-in        ${CARD_ANIM_DURATION_MS}ms ${CARD_ANIM_EASING} both`,
       },
 
       /* ── Max widths ── */
