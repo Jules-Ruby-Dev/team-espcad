@@ -1,7 +1,9 @@
 <template>
   <article
-    class="card overflow-hidden"
-    :class="[animClass, delayClass]"
+    class="card overflow-hidden
+           dark:bg-white bg-teal"
+    :class="animClass"
+    :style="animStyle"
   >
     <!-- Desktop: horizontal 3-column grid | Mobile: stacked -->
     <div class="flex flex-col sm:flex-row sm:items-stretch gap-l p-l sm:p-xl">
@@ -17,13 +19,16 @@
 
       <!-- Info -->
       <div class="flex-1 text-center sm:text-left flex flex-col justify-center">
-        <h2 class="font-barlow text-h3 font-bold text-teal-dark1 leading-tight mb-xxs">
+        <h2 class="font-barlow text-h3 font-bold leading-tight mb-xxs
+                   dark:text-teal-dark1 text-yellow-dark">
           {{ name }}
         </h2>
-        <p class="font-work text-body-sm font-semibold text-teal uppercase tracking-widest mb-s">
+        <p class="font-work text-body-sm font-semibold uppercase tracking-widest mb-s
+                  dark:text-teal text-yellow">
           {{ role }}
         </p>
-        <p class="font-work text-body text-slate-dark1">
+        <p class="font-work text-body
+                  dark:text-slate-dark1 text-white">
           {{ bio }}
         </p>
       </div>
@@ -70,6 +75,7 @@
 
 <script setup>
 import { computed } from 'vue'
+import { CARD_ANIM_DURATION_MS, CARD_ANIM_STAGGER_MS, CARD_ANIM_EASING } from '../animation.js'
 
 const props = defineProps({
   name:        { type: String, required: true },
@@ -92,8 +98,13 @@ const animClass = computed(() =>
 )
 
 /*
- * Stagger: each card starts halfway through the previous card's 600ms duration,
- * so the delay increments by 300ms per card.
+ * Stagger: each card starts CARD_ANIM_STAGGER_MS after the previous one.
+ * Using inline :style so the delay is not overridden by Tailwind's animation
+ * shorthand utility (which resets animation-delay to 0 in @layer utilities).
  */
-const delayClass = computed(() => `card-delay-${props.cardIndex}`)
+const animStyle = computed(() => ({
+  animationDelay:    `${props.cardIndex * CARD_ANIM_STAGGER_MS}ms`,
+  animationDuration: `${CARD_ANIM_DURATION_MS}ms`,
+  animationTimingFunction: CARD_ANIM_EASING,
+}))
 </script>

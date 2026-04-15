@@ -45,6 +45,11 @@ export default {
         bird: {
           orange: '#F7731C',
         },
+        yellow: {
+          DEFAULT: '#ECC94B',
+          dark:    '#D69E2E',
+          dark2:   '#B7791F',
+        },
       },
 
       /* ── Gradient backgrounds ── */
@@ -113,9 +118,9 @@ export default {
         },
       },
       animation: {
-        'slide-in-left':  'slide-in-left  600ms ease-in both',
-        'slide-in-right': 'slide-in-right 600ms ease-in both',
-        'fade-in':        'fade-in        600ms ease-in both',
+        'slide-in-left':  'slide-in-left  400ms cubic-bezier(0.4,0,1,1) both',
+        'slide-in-right': 'slide-in-right 400ms cubic-bezier(0.4,0,1,1) both',
+        'fade-in':        'fade-in        400ms cubic-bezier(0.4,0,1,1) both',
       },
 
       /* ── Max widths ── */

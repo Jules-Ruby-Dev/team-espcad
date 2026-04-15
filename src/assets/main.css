@@ -43,12 +43,9 @@
   }
 
   /* ─── Staggered card animations ─── */
-  /* Delay values (stagger = duration/2 = 300ms each) */
-  .card-delay-0  { animation-delay:    0ms; }
-  .card-delay-1  { animation-delay:  300ms; }
-  .card-delay-2  { animation-delay:  600ms; }
-  .card-delay-3  { animation-delay:  900ms; }
-  .card-delay-4  { animation-delay: 1200ms; }
+  /* animation-delay is applied inline via :style binding in TeamMemberCard.vue
+     so it is not overridden by Tailwind's animation utility (which resets the
+     delay to 0 inside the shorthand via @layer utilities). */
 
   /* ─── Mobile: disable translate, use fade-in only ─── */
   @media (max-width: 639px) {
