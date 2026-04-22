@@ -64,7 +64,7 @@
     </header>
 
     <!-- Main content -->
-    <main class="flex-1 w-full max-w-content mx-auto px-m sm:px-l pb-2xl">
+    <main class="flex-1 w-full max-w-content wide:max-w-[1960px] mx-auto px-m sm:px-l pb-2xl">
       <h1
         class="font-barlow text-h2 sm:text-h1 font-bold text-center mb-xl tracking-wide dark:text-yellow-dark text-yellow-dark2"
       >
@@ -72,7 +72,7 @@
       </h1>
 
       <!-- Cards list – staggered animation on mount -->
-      <div class="flex flex-col gap-l">
+      <div class="grid grid-cols-1 wide:grid-cols-2 gap-l">
         <TeamMemberCard
           v-for="(member, index) in teamMembers"
           :key="member.name"
@@ -170,7 +170,7 @@ const teamMembers = [
   {
     name: "Louielyn Mata",
     role: "Project Manager & Fullstack Engineer",
-    bio: "Holistic specialty in design, code, UX, and business strategy, Louie creates user-centric solutions across the SDLC, from discovery and architecture to system design and continuous delivery.",
+    bio: "Holistic specialty in design, code, UX, and business strategy, Louie creates user-centric solutions across the SDLC, from architecture to system design and continuous delivery.",
     portrait: louiePortrait,
     linkedinQr: louieQr,
     linkedinUrl: "https://www.linkedin.com/in/louielynmata/",
