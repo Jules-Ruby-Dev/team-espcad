@@ -41,7 +41,8 @@
           <img
             :src="linkedinQr"
             :alt="name + ' LinkedIn QR code'"
-            class="w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] border border-teal/20 rounded-lg object-contain group-hover:shadow-sm transition-shadow duration-150"
+            class="w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] border border-slate-light1 rounded-xl object-contain group-hover:shadow-sm transition-shadow duration-150"
+            style="mix-blend-mode: multiply;"
           />
         </a>
         <!-- <a
