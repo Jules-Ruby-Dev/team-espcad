@@ -79,9 +79,7 @@ const props = defineProps({
   bio:         { type: String, required: true },
   portrait:    { type: String, required: true },
   linkedinQr:  { type: String, required: true },
-  githubQr:    { type: String, required: true },
   linkedinUrl: { type: String, default: 'https://linkedin.com' },
-  githubUrl:   { type: String, default: 'https://github.com' },
   cardIndex:   { type: Number, default: 0 },
 })
 
