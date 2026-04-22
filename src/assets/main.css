@@ -39,7 +39,7 @@
 
   /* Card surface – dark mode keeps white, light mode uses teal */
   .card {
-    @apply dark:bg-white bg-gradient-dark rounded-card shadow-card;
+    @apply bg-gradient-dark dark:bg-gradient-light  rounded-card shadow-card;
   }
 
   /* ─── Staggered card animations ─── */
