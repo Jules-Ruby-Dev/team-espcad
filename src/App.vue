@@ -146,7 +146,7 @@ const teamMembers = [
   {
     name: "Chris Hanlon",
     role: "Database Admin & Backend Engineer",
-    bio: "Alex drives the overall system architecture and keeps the team on track from concept to deployment.",
+    bio: "Chris architects and maintains the data layer that keeps ESPCAD running reliably, with a focus on backend systems and performance.",
     portrait: chrisPortrait,
     linkedinQr: chrisQr,
     linkedinUrl: "https://www.linkedin.com/in/christopher-hanovich-564083161/",
@@ -154,7 +154,7 @@ const teamMembers = [
   {
     name: "Jordan Labell",
     role: "Security Lead & Backend Engineer",
-    bio: "Jordan specialises in firmware for ESP32 microcontrollers and real-time sensor data pipelines.",
+    bio: "Jordan leads the team's security posture and contributes to backend development, ensuring the system is robust from the ground up",
     portrait: jordanPortrait,
     linkedinQr: jordanQr,
     linkedinUrl: "https://www.linkedin.com/in/jordan-labell-419008326/",
@@ -162,7 +162,7 @@ const teamMembers = [
   {
     name: "J.R. Muri",
     role: "DevOps Lead & Fullstack Engineer",
-    bio: "Sam designs and fabricates custom PCBs, turning schematics into production-ready hardware.",
+    bio: "J.R. owns the deployment pipeline and CI/CD infrastructure while contributing across the full stack to keep the product shipping smoothly.",
     portrait: jrPortrait,
     linkedinQr: jrQr,
     linkedinUrl: "https://www.linkedin.com/in/jr-muri-ui/",
@@ -178,7 +178,7 @@ const teamMembers = [
   {
     name: "Rocky McGoey",
     role: "QA and Testing Lead & Frontend Engineer",
-    bio: "Casey builds the web dashboard and cloud backend that visualise live data from the ESPCAD devices.",
+    bio: "Rocky drives quality assurance across the codebase and shapes the frontend experience, making sure every release is polished and reliable",
     portrait: rockyPortrait,
     linkedinQr: rockyQr,
     linkedinUrl: "https://www.linkedin.com/in/rocky-mcgoey-a2514633b/",
