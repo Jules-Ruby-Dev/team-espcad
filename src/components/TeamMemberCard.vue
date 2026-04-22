@@ -35,17 +35,14 @@
           :href="linkedinUrl"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex flex-col items-center gap-xs group"
+          class="group"
           :aria-label="name + ' LinkedIn profile'"
         >
           <img
             :src="linkedinQr"
             :alt="name + ' LinkedIn QR code'"
-            class="w-[150px] h-[150px] sm:w-[140px] sm:h-[140px] border border-slate-light1 rounded-lg object-contain group-hover:shadow-sm transition-shadow duration-150"
+            class="w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] border border-teal/20 rounded-lg object-contain group-hover:shadow-sm transition-shadow duration-150"
           />
-          <span class="font-work text-caption font-semibold text-teal uppercase tracking-wider group-hover:text-teal-dark1 transition-colors duration-150">
-            LinkedIn
-          </span>
         </a>
         <!-- <a
           :href="githubUrl"
