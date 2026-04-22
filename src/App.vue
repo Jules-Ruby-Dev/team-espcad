@@ -97,6 +97,18 @@ import TeamMemberCard from "./components/TeamMemberCard.vue";
 import logoLight from "./assets/images/logo-flydocs-header.svg";
 import logoDark from "./assets/images/logo-flydocs-header-dark.svg";
 
+// Team portraits & QR codes
+import chrisPortrait  from "./assets/images/chris_portrait.jpg";
+import chrisQr        from "./assets/images/chris_qr_code.jpg";
+import jordanPortrait from "./assets/images/jordan_portrait.jpg";
+import jordanQr       from "./assets/images/jordan_qr_code.jpg";
+import jrPortrait     from "./assets/images/jr_portrait.jpg";
+import jrQr           from "./assets/images/jr_qr_code.jpg";
+import louiePortrait  from "./assets/images/louie_portrait.jpg";
+import louieQr        from "./assets/images/louie_qr_code.jpg";
+import rockyPortrait  from "./assets/images/rocky_portrait.jpg";
+import rockyQr        from "./assets/images/rocky_qr_code.png";
+
 /* ── Theme management ── */
 const isDark = ref(true);
 
@@ -135,40 +147,40 @@ const teamMembers = [
     name: "Chris Hanlon",
     role: "Database Admin & Backend Engineer",
     bio: "Alex drives the overall system architecture and keeps the team on track from concept to deployment.",
-    portrait: "./assets/images/chris_portrait.jpg",
-    linkedinQr: "./assets/images/chris_qr_code.jpg",
+    portrait: chrisPortrait,
+    linkedinQr: chrisQr,
     linkedinUrl: "https://www.linkedin.com/in/christopher-hanovich-564083161/",
   },
   {
     name: "Jordan Labell",
     role: "Security Lead & Backend Engineer",
     bio: "Jordan specialises in firmware for ESP32 microcontrollers and real-time sensor data pipelines.",
-    portrait: "./assets/images/jordan_portrait.jpg",
-    linkedinQr: "./assets/images/jordan_qr_code.jpg",
+    portrait: jordanPortrait,
+    linkedinQr: jordanQr,
     linkedinUrl: "https://www.linkedin.com/in/jordan-labell-419008326/",
   },
   {
     name: "J.R. Muri",
     role: "DevOps Lead & Fullstack Engineer",
     bio: "Sam designs and fabricates custom PCBs, turning schematics into production-ready hardware.",
-    portrait: "./assets/images/jr_portrait.jpg",
-    linkedinQr: "./assets/images/jr_qr_code.jpg",
+    portrait: jrPortrait,
+    linkedinQr: jrQr,
     linkedinUrl: "https://www.linkedin.com/in/jr-muri-ui/",
   },
   {
     name: "Louielyn Mata",
     role: "Project Manager & Fullstack Engineer",
     bio: "Design & Full-stack Software Engineer\n\nWith a holistic specialty in design, code, UX, and business strategy, Louie creates user-centric solutions across the SDLC (Software Development Life Cycle), from discovery and architecture to system design and continuous delivery.",
-    portrait: "./assets/images/louie_portrait.jpg",
-    linkedinQr: "./assets/images/louie_qr_code.jpg",
+    portrait: louiePortrait,
+    linkedinQr: louieQr,
     linkedinUrl: "https://www.linkedin.com/in/louielynmata/",
   },
   {
     name: "Rocky McGoey",
     role: "QA and Testing Lead & Frontend Engineer",
     bio: "Casey builds the web dashboard and cloud backend that visualise live data from the ESPCAD devices.",
-    portrait: "./assets/images/rocky_portrait.jpg",
-    linkedinQr: "./assets/images/rocky_qr_code.jpg",
+    portrait: rockyPortrait,
+    linkedinQr: rockyQr,
     linkedinUrl: "https://www.linkedin.com/in/rocky-mcgoey-a2514633b/",
   },
 ];
