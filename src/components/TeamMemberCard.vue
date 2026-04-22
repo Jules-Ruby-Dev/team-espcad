@@ -47,7 +47,7 @@
             LinkedIn
           </span>
         </a>
-        <a
+        <!-- <a
           :href="githubUrl"
           target="_blank"
           rel="noopener noreferrer"
@@ -62,7 +62,7 @@
           <span class="font-work text-caption font-semibold text-teal uppercase tracking-wider group-hover:text-teal-dark1 transition-colors duration-150">
             GitHub
           </span>
-        </a>
+        </a> -->
       </div>
 
     </div>
