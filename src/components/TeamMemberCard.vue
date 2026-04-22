@@ -41,7 +41,7 @@
             :src="linkedinQr"
             :alt="name + ' LinkedIn QR code'"
             class="w-[180px] h-[180px] border border-slate-light1 rounded-xl object-contain group-hover:shadow-sm transition-shadow duration-150"
-            style="mix-blend-mode: multiply;"
+
           />
         </a>
       </div>
