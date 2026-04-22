@@ -98,16 +98,16 @@ import logoLight from "./assets/images/logo-flydocs-header.svg";
 import logoDark from "./assets/images/logo-flydocs-header-dark.svg";
 
 // Team portraits & QR codes
-import chrisPortrait  from "./assets/images/chris_portrait.jpg";
-import chrisQr        from "./assets/images/chris_qr_code.jpg";
+import chrisPortrait from "./assets/images/chris_portrait.jpg";
+import chrisQr from "./assets/images/chris_qr_code.jpg";
 import jordanPortrait from "./assets/images/jordan_portrait.jpg";
-import jordanQr       from "./assets/images/jordan_qr_code.jpg";
-import jrPortrait     from "./assets/images/jr_portrait.jpg";
-import jrQr           from "./assets/images/jr_qr_code.jpg";
-import louiePortrait  from "./assets/images/louie_portrait.jpg";
-import louieQr        from "./assets/images/louie_qr_code.jpg";
-import rockyPortrait  from "./assets/images/rocky_portrait.jpg";
-import rockyQr        from "./assets/images/rocky_qr_code.png";
+import jordanQr from "./assets/images/jordan_qr_code.jpg";
+import jrPortrait from "./assets/images/jr_portrait.jpg";
+import jrQr from "./assets/images/jr_qr_code.jpg";
+import louiePortrait from "./assets/images/louie_portrait.jpg";
+import louieQr from "./assets/images/louie_qr_code.jpg";
+import rockyPortrait from "./assets/images/rocky_portrait.jpg";
+import rockyQr from "./assets/images/rocky_qr_code.png";
 
 /* ── Theme management ── */
 const isDark = ref(true);
@@ -170,7 +170,7 @@ const teamMembers = [
   {
     name: "Louielyn Mata",
     role: "Project Manager & Fullstack Engineer",
-    bio: "Design & Full-stack Software Engineer\n\nWith a holistic specialty in design, code, UX, and business strategy, Louie creates user-centric solutions across the SDLC (Software Development Life Cycle), from discovery and architecture to system design and continuous delivery.",
+    bio: "Holistic specialty in design, code, UX, and business strategy, Louie creates user-centric solutions across the SDLC, from discovery and architecture to system design and continuous delivery.",
     portrait: louiePortrait,
     linkedinQr: louieQr,
     linkedinUrl: "https://www.linkedin.com/in/louielynmata/",
