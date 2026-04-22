@@ -39,7 +39,30 @@
 
   /* Card surface – dark mode keeps white, light mode uses teal */
   .card {
-    @apply bg-gradient-dark dark:bg-gradient-light  rounded-card shadow-card;
+    @apply bg-gradient-dark dark:bg-gradient-light rounded-card shadow-card;
+    container-type: inline-size;
+    container-name: card;
+  }
+
+  /* ─── Container query: stack card internals when card is narrower than 600px ─── */
+  @container card (max-width: 600px) {
+    .card-inner {
+      flex-direction: column !important;
+      padding: 1.5rem !important;
+    }
+    .card-portrait {
+      justify-content: center;
+    }
+    .card-info {
+      text-align: center;
+    }
+    .card-qr {
+      flex-direction: row;
+      border-top: 1px solid #e2e8f0;
+      border-left: none !important;
+      padding-top: 1.5rem;
+      padding-left: 0 !important;
+    }
   }
 
   /* ─── Staggered card animations ─── */
