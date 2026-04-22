@@ -1,9 +1,8 @@
 <template>
   <article
-    class="card overflow-hidden
-           dark:bg-white bg-teal"
+    class="card overflow-hidden"
     :class="animClass"
-    :style="animStyle"
+    :style="{ animationDelay: `${props.cardIndex * CARD_ANIM_STAGGER_MS}ms` }"
   >
     <!-- Desktop: horizontal 3-column grid | Mobile: stacked -->
     <div class="flex flex-col sm:flex-row sm:items-stretch gap-l p-l sm:p-xl">
@@ -19,16 +18,13 @@
 
       <!-- Info -->
       <div class="flex-1 text-center sm:text-left flex flex-col justify-center">
-        <h2 class="font-barlow text-h3 font-bold leading-tight mb-xxs
-                   dark:text-teal-dark1 text-yellow-dark">
+        <h2 class="font-barlow text-h3 font-bold text-yellow-dark dark:text-teal-dark1 leading-tight mb-xxs">
           {{ name }}
         </h2>
-        <p class="font-work text-body-sm font-semibold uppercase tracking-widest mb-s
-                  dark:text-teal text-yellow">
+        <p class="font-work text-body-sm font-semibold text-yellow dark:text-teal uppercase tracking-widest mb-s">
           {{ role }}
         </p>
-        <p class="font-work text-body
-                  dark:text-slate-dark1 text-white">
+        <p class="font-work text-body text-white dark:text-slate-dark1">
           {{ bio }}
         </p>
       </div>
@@ -90,8 +86,9 @@ const props = defineProps({
 })
 
 /*
- * Animation direction alternates: even → from left, odd → from right.
- * On mobile (<640px) main.css overrides both to use fade-in only.
+ * Stagger: each card starts halfway through the previous card's animation.
+ * Duration and stagger step are controlled via src/styles/animation.js.
+ * The animationDelay inline style is set directly from CARD_ANIM_STAGGER_MS.
  */
 const animClass = computed(() =>
   props.cardIndex % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'

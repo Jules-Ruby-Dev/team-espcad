@@ -37,9 +37,9 @@
            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2;
   }
 
-  /* Card surface */
+  /* Card surface – dark mode keeps white, light mode uses teal */
   .card {
-    @apply bg-white rounded-card shadow-card;
+    @apply dark:bg-white bg-teal rounded-card shadow-card;
   }
 
   /* ─── Staggered card animations ─── */
