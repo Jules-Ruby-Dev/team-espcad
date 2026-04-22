@@ -30,7 +30,7 @@
       </div>
 
       <!-- QR codes -->
-      <div class="flex-shrink-0 flex sm:flex-col flex-row justify-center items-center gap-l sm:gap-xl border-t sm:border-t-0 sm:border-l border-4 border-teal/20 pt-l sm:pt-0 sm:pl-xl">
+      <div class="flex-shrink-0 flex sm:flex-col flex-row justify-center items-center gap-l sm:gap-xl border-t sm:border-t-0 sm:border-l border-slate-light1 pt-l sm:pt-0 sm:pl-xl">
         <a
           :href="linkedinUrl"
           target="_blank"
@@ -41,7 +41,7 @@
           <img
             :src="linkedinQr"
             :alt="name + ' LinkedIn QR code'"
-            class="w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] border border-teal/20 rounded-lg object-contain group-hover:shadow-sm transition-shadow duration-150"
+            class="w-[200px] h-[200px] sm:w-[180px] sm:h-[180px] border-4 border-teal/20 rounded-lg object-contain group-hover:shadow-sm transition-shadow duration-150"
           />
         </a>
         <!-- <a
