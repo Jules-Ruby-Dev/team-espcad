@@ -11,7 +11,7 @@
                shadow-sm"
       >
         <!-- Sun icon -->
-        <svg class="w-4 h-4 transition-opacity duration-200" :class="isDark ? 'opacity-40' : 'opacity-100 text-bird-orange'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <svg class="w-4 h-4 transition-opacity duration-200" :class="isDark ? 'opacity-40 text-white' : 'opacity-100 text-yellow'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1zm0-16a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1zm9 8a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zM4 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1zm14.95 5.364a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707zM6.757 7.05a1 1 0 0 1-1.414 1.415l-.707-.707A1 1 0 0 1 6.05 6.343l.707.707zm12.02-1.414a1 1 0 0 1 0 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0zM7.464 17.657a1 1 0 0 1 0 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0z"/>
         </svg>
         <!-- Pill track -->
@@ -21,7 +21,7 @@
           </span>
         </span>
         <!-- Moon icon -->
-        <svg class="w-4 h-4 transition-opacity duration-200" :class="isDark ? 'opacity-100 text-teal-light1' : 'opacity-40'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <svg class="w-4 h-4 transition-opacity duration-200" :class="isDark ? 'opacity-100 text-teal-light1' : 'opacity-40 text-white'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
         </svg>
       </button>
@@ -41,7 +41,8 @@
 
     <!-- Main content -->
     <main class="flex-1 w-full max-w-content mx-auto px-m sm:px-l pb-2xl">
-      <h1 class="font-barlow text-h2 sm:text-h1 font-bold text-yellow-dark2 dark:text-yellow-dark text-center mb-xl tracking-wide">
+      <h1 class="font-barlow text-h2 sm:text-h1 font-bold text-center mb-xl tracking-wide
+                 dark:text-yellow-dark text-yellow-dark2">
         Meet the Team
       </h1>
 

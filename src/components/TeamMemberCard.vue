@@ -2,7 +2,7 @@
   <article
     class="card overflow-hidden"
     :class="animClass"
-    :style="{ animationDelay: `${props.cardIndex * CARD_ANIM_STAGGER_MS}ms` }"
+    :style="animStyle"
   >
     <!-- Desktop: horizontal 3-column grid | Mobile: stacked -->
     <div class="flex flex-col sm:flex-row sm:items-stretch gap-l p-l sm:p-xl">
@@ -71,7 +71,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { CARD_ANIM_STAGGER_MS } from '../styles/animation.js'
+import { CARD_ANIM_DURATION_MS, CARD_ANIM_STAGGER_MS, CARD_ANIM_EASING } from '../animation.js'
 
 const props = defineProps({
   name:        { type: String, required: true },
@@ -86,11 +86,16 @@ const props = defineProps({
 })
 
 /*
- * Stagger: each card starts halfway through the previous card's animation.
- * Duration and stagger step are controlled via src/styles/animation.js.
- * The animationDelay inline style is set directly from CARD_ANIM_STAGGER_MS.
+ * Stagger: each card starts CARD_ANIM_STAGGER_MS after the previous one.
+ * Using inline :style so the delay is not overridden by Tailwind's animation
+ * shorthand utility (which resets animation-delay to 0 in @layer utilities).
  */
 const animClass = computed(() =>
   props.cardIndex % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'
 )
+const animStyle = computed(() => ({
+  animationDelay:    `${props.cardIndex * CARD_ANIM_STAGGER_MS}ms`,
+  animationDuration: `${CARD_ANIM_DURATION_MS}ms`,
+  animationTimingFunction: CARD_ANIM_EASING,
+}))
 </script>

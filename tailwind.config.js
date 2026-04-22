@@ -52,9 +52,9 @@ export default {
           orange: '#F7731C',
         },
         yellow: {
-          DEFAULT: '#F6C90E',
-          dark: '#FBBF24',
-          dark2: '#B45309',
+          DEFAULT: '#ECC94B',
+          dark:    '#D69E2E',
+          dark2:   '#B7791F',
         },
       },
 
@@ -124,9 +124,9 @@ export default {
         },
       },
       animation: {
-        'slide-in-left':  `slide-in-left  ${CARD_ANIM_DURATION_MS}ms ${CARD_ANIM_EASING} both`,
-        'slide-in-right': `slide-in-right ${CARD_ANIM_DURATION_MS}ms ${CARD_ANIM_EASING} both`,
-        'fade-in':        `fade-in        ${CARD_ANIM_DURATION_MS}ms ${CARD_ANIM_EASING} both`,
+        'slide-in-left':  'slide-in-left  400ms cubic-bezier(0.4,0,1,1) both',
+        'slide-in-right': 'slide-in-right 400ms cubic-bezier(0.4,0,1,1) both',
+        'fade-in':        'fade-in        400ms cubic-bezier(0.4,0,1,1) both',
       },
 
       /* ── Max widths ── */

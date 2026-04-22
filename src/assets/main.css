@@ -42,6 +42,11 @@
     @apply dark:bg-white bg-teal rounded-card shadow-card;
   }
 
+  /* ─── Staggered card animations ─── */
+  /* animation-delay is applied inline via :style binding in TeamMemberCard.vue
+     so it is not overridden by Tailwind's animation utility (which resets the
+     delay to 0 inside the shorthand via @layer utilities). */
+
   /* ─── Mobile: disable translate, use fade-in only ─── */
   @media (max-width: 639px) {
     .animate-slide-in-left,
