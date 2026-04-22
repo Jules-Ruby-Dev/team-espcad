@@ -9,5 +9,5 @@
  */
 export const CARD_ANIM_DURATION_MS = 400
 export const CARD_ANIM_OVERLAP     = 0.5
-export const CARD_ANIM_STAGGER_MS  = CARD_ANIM_DURATION_MS * CARD_ANIM_OVERLAP  // 200ms
-export const CARD_ANIM_EASING      = 'cubic-bezier(0.4, 0, 1, 1)'               // ease-in
+export const CARD_ANIM_STAGGER_MS  = CARD_ANIM_DURATION_MS * (1 - CARD_ANIM_OVERLAP)  // 200ms
+export const CARD_ANIM_EASING      = 'cubic-bezier(0.4, 0, 1, 1)'                     // ease-in
